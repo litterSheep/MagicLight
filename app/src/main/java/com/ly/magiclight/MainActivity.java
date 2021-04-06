@@ -19,7 +19,6 @@ import com.ly.magiclight.view.ColorfulLayout;
 public class MainActivity extends AppCompatActivity {
 
     private ColorfulLayout colorfulLayout;
-    private AlertDialog colorDialog;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -31,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
         colorfulLayout = findViewById(R.id.container);
         ActionView actionView = findViewById(R.id.action_view);
         actionView.setColorfulLayout(colorfulLayout);
+
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
     }
 
     private void setFullScreen() {
@@ -50,4 +51,8 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    //禁用返回 防误触
+    @Override
+    public void onBackPressed() {
+    }
 }
