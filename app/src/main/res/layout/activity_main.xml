@@ -9,7 +9,7 @@
 
     <com.ly.magiclight.view.ProgressContainer
         android:layout_width="40dp"
-        android:layout_height="wrap_content"
+        android:layout_height="300dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         app:progressColor1="#FFFFFF"

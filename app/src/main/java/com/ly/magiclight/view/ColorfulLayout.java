@@ -43,7 +43,7 @@ public class ColorfulLayout extends RelativeLayout implements ValueAnimator.Anim
     private int adjustType;
     private int touchSlop;
     //滑动因子，越大滑动越灵敏
-    private static final float TOUCH_FACTOR = 0.1f;
+    private static final float TOUCH_FACTOR = 0.08f;
     private static final int START_LOOP = 1;
     private AccelerateDecelerateInterpolator accelerateDecelerateInterpolator;
     private ArgbEvaluator argbEvaluator;
